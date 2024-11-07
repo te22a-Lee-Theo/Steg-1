@@ -23,21 +23,39 @@
 //     System.Console.WriteLine("Hello world");
 // }
 
+// System.Console.WriteLine("Enter your password");
+// string Pass;
 
-System.Console.WriteLine("Enter your password");
-string Pass;
+// while (true)
+// {
+//     Pass = Console.ReadLine();
+//     if (Pass == "nopass")
+//     {
+//         System.Console.WriteLine("Welcome");
+//         break;
+//     }
+//     else 
+//     {
+//         System.Console.WriteLine("Wrong password");
+//     }
+// }
 
-while (true)
+for (int i = 0; i <= 4; i++)
 {
-    Pass = Console.ReadLine();
-    if (Pass == "nopass")
+    System.Console.WriteLine("Enter a number");
+    string Usernum = Console.ReadLine();
+    int Num = int.Parse(Usernum);
+    if (Num > 5)
     {
-        System.Console.WriteLine("Welcome");
-        break;
+        System.Console.WriteLine("Höger än 5!");
     }
-    else 
+    else if (Num < 5)
     {
-        System.Console.WriteLine("Wrong password");
+        System.Console.WriteLine("Lägre än 5");
+    }
+    else
+    {
+        System.Console.WriteLine(Num);
     }
 }
 
