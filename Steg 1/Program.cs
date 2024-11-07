@@ -18,11 +18,27 @@
 //     System.Console.WriteLine("Wrong username or password");
 // }
 
+// for (int i = 0; i < 32; i++)
+// {
+//     System.Console.WriteLine("Hello world");
+// }
 
 
-for (int i = 0; i < 32; i++)
+System.Console.WriteLine("Enter your password");
+string Pass;
+
+while (true)
 {
-    System.Console.WriteLine("Hello world");
+    Pass = Console.ReadLine();
+    if (Pass == "nopass")
+    {
+        System.Console.WriteLine("Welcome");
+        break;
+    }
+    else 
+    {
+        System.Console.WriteLine("Wrong password");
+    }
 }
 
 
