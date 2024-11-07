@@ -5,12 +5,17 @@
 //     System.Console.WriteLine("Hello World");
 // }
 
-System.Console.WriteLine("Enter Username");
-String User = Console.ReadLine();
+System.Console.WriteLine("Enter Username and password");
+string User = Console.ReadLine();
+string Pass = Console.ReadLine();
 
-if (User == "noname")
+if (User == "noname" && Pass == "nopass")
 {
     System.Console.WriteLine("Welcome");
+}
+else 
+{
+    System.Console.WriteLine("Wrong username or password");
 }
 
 
