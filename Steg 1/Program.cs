@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿if (6 >= 3)
+{
+    System.Console.WriteLine("Hello World");
+}
