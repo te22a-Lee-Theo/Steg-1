@@ -40,24 +40,33 @@
 //     }
 // }
 
-for (int i = 0; i <= 4; i++)
+// for (int i = 0; i <= 4; i++)
+// {
+//     System.Console.WriteLine("Enter a number");
+//     string Usernum = Console.ReadLine();
+//     int Num = int.Parse(Usernum);
+//     if (Num > 5)
+//     {
+//         System.Console.WriteLine("Höger än 5!");
+//     }
+//     else if (Num < 5)
+//     {
+//         System.Console.WriteLine("Lägre än 5");
+//     }
+//     else
+//     {
+//         System.Console.WriteLine(Num);
+//     }
+// }
+
+bool TrueorFalse = false;
+
+while (TrueorFalse == false)
 {
-    System.Console.WriteLine("Enter a number");
-    string Usernum = Console.ReadLine();
-    int Num = int.Parse(Usernum);
-    if (Num > 5)
-    {
-        System.Console.WriteLine("Höger än 5!");
-    }
-    else if (Num < 5)
-    {
-        System.Console.WriteLine("Lägre än 5");
-    }
-    else
-    {
-        System.Console.WriteLine(Num);
-    }
+    string Input = Console.ReadLine();
+    int Num;
+    TrueorFalse = int.TryParse(Input, out Num);
 }
 
 
-Console.ReadLine();
+// Console.ReadLine();
