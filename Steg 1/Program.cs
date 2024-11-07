@@ -59,14 +59,47 @@
 //     }
 // }
 
-bool TrueorFalse = false;
+// bool TrueorFalse = false;
 
-while (TrueorFalse == false)
+// while (TrueorFalse == false)
+// {
+//     string Input = Console.ReadLine();
+//     int Num;
+//     TrueorFalse = int.TryParse(Input, out Num);
+// }
+
+
+System.Console.WriteLine("Time for a game of guess the number");
+System.Console.WriteLine("Just enter a number between 1 and 10 and I'll tell you wether your wrong or right");
+
+int Ans = Random.Shared.Next(1, 10);
+
+while (true)
 {
+    System.Console.WriteLine("Enter your guess");
     string Input = Console.ReadLine();
     int Num;
-    TrueorFalse = int.TryParse(Input, out Num);
+    bool Convert = int.TryParse(Input, out Num);
+
+    if (Num == Ans)
+    {
+        System.Console.WriteLine("Correct, you win");
+        break;
+    }
+    else if (Num < Ans)
+    {
+        System.Console.WriteLine("Incorrect, try guessing higher");
+    }
+    else if (Num > Ans)
+    {
+        System.Console.WriteLine("Incorrect, try guessing lower");
+    }
+    else
+    {
+        System.Console.WriteLine("That's wrong \nTry again");
+    }
 }
 
 
-// Console.ReadLine();
+
+Console.ReadLine();
